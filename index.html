@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Keep It Real</title>
+  <meta name="description" content="A daily hip-hop lyric, reflection, and action step. One a day." />
+  <meta property="og:title" content="Keep It Real" />
+  <meta property="og:description" content="A daily hip-hop lyric to carry with you." />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+
+  <div class="layout">
+
+    <!-- LEFT: IMAGE PANEL -->
+    <div class="image-panel loading" id="image-panel">
+      <img id="artist-img" alt="" />
+      <div class="image-overlay"></div>
+      <div class="img-fallback"></div>
+
+      <!-- Decorative brand star — matches the style guide icon set -->
+      <div class="deco-star">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M24 2L26.8 18.2L40 8L30.8 21.2L47 24L30.8 26.8L40 40L26.8 29.8L24 46L21.2 29.8L8 40L17.2 26.8L1 24L17.2 21.2L8 8L21.2 18.2L24 2Z" fill="#FF7300"/>
+        </svg>
+      </div>
+
+      <div class="date-badge">
+        <span class="day-name" id="day-name"></span>
+        <span class="date-text" id="date-text"></span>
+      </div>
+    </div>
+
+    <!-- RIGHT: CONTENT PANEL -->
+    <div class="content-panel">
+
+      <div class="label-row">
+        <span class="site-name">Keep It Real</span>
+        <span class="label-dot"></span>
+        <span class="label-sub">Daily Lyric</span>
+      </div>
+
+      <div class="lyric-block">
+        <span class="lyric-text" id="lyric"></span>
+      </div>
+
+      <div class="attribution">
+        <span class="attr-bar"></span>
+        <span class="artist" id="artist-name"></span>
+        <span class="attr-sep">/</span>
+        <span class="song" id="song-title"></span>
+      </div>
+
+      <hr class="divider" />
+
+      <div class="reflection-block">
+        <span class="section-label">Reflection</span>
+        <p class="reflection-text" id="reflection"></p>
+      </div>
+
+      <div class="action-block">
+        <span class="section-label">Today's Action</span>
+        <p class="action-text" id="action-step"></p>
+      </div>
+
+      <div class="listen-row">
+        <a id="spotify-btn" class="listen-btn btn-spotify" href="#" target="_blank" rel="noopener">
+          <svg class="btn-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.586 14.424a.622.622 0 0 1-.857.207c-2.348-1.435-5.304-1.76-8.785-.964a.622.622 0 1 1-.277-1.215c3.809-.87 7.077-.496 9.712 1.115a.623.623 0 0 1 .207.857zm1.223-2.722a.779.779 0 0 1-1.072.257c-2.687-1.652-6.785-2.131-9.965-1.166a.779.779 0 0 1-.968-.519.78.78 0 0 1 .52-.969c3.632-1.102 8.147-.568 11.228 1.328a.779.779 0 0 1 .257 1.069zm.105-2.835C14.692 8.95 9.375 8.775 6.297 9.71a.935.935 0 1 1-.543-1.79c3.532-1.072 9.404-.865 13.115 1.337a.934.934 0 0 1-.955 1.61z"/>
+          </svg>
+          Spotify
+        </a>
+
+        <a id="youtube-btn" class="listen-btn btn-youtube" href="#" target="_blank" rel="noopener">
+          <svg class="btn-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+          </svg>
+          YouTube
+        </a>
+
+        <a id="apple-btn" class="listen-btn btn-apple" href="#" target="_blank" rel="noopener">
+          <svg class="btn-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.994 6.124a.944.944 0 0 0-.935-.994l-7.456.13a.944.944 0 0 0-.928.957v8.557c-.489-.23-1.037-.357-1.612-.357-2.026 0-3.67 1.644-3.67 3.67S11.037 21.757 13.063 21.757s3.67-1.644 3.67-3.67V10.6l5.335-.093v3.445a3.637 3.637 0 0 0-1.577-.358c-2.026 0-3.67 1.644-3.67 3.67s1.644 3.67 3.67 3.67 3.67-1.644 3.67-3.67V6.124h-.167z"/>
+          </svg>
+          Apple Music
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
